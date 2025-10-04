@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiva - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <header>
+        <nav id="nav-box">
+            <button class="fa-solid fa-bars navbar-toggler"></button>
+            
+            <h3 class="border">Beautiva</h3>
+            
+            <a href="about.html" class="border">About us</a>
+            <a href="contact.html" class="border">Contact us</a>
+            <i class="fa-solid fa-magnifying-glass search border"></i>
+            <i id="cart-btn" class="fa-solid fa-bag-shopping border"></i>
+        </nav>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div id="search-area">
+            <div>
+                <input type="text" placeholder="Search">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="cart-area" >
+            <i id="close-btn" class="fa-solid fa-xmark "></i>
+            <div id="area-1">
+                <h2>Cart</h2>
+                <p id="cart_empty">Your Cart is empty</p>
+            </div>
+            <div id="cashier">
+                <div>
+                    <span id="subtotal">Subtotal:</span>
+                    <span id="subtotal_price"></span>
+                </div>
+                <button id="checkout_btn">CHECKOUT</button>
+            </div>
+        </div>
+            <img src="frontpic.png" alt="front" class="front">
+        </div>
+        <h3 id="head-line">Beautiva Makeup for everyone</h3>
+    </header>
+    <main id="main_content">
+        <!-- <div class="product" style="display: none;">
+            <img class="pro_sec1">
+            <div class="pro_sec2"></div>
+        </div> -->
+    </main>
+    <footer>
+        <div class="footer_style">&copy All rights are reserved</div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+    <!-- <h1>Search University Name</h1>
+    <input type="text" id="inputField">
+    <button class="btn">Search</button>
+    <ul class="list"></ul>
+    <h1 class="h1">Get random cat facts</h1>
+    <button class="btn_style">New Fact</button>
+    <p class="p"></p>
+    <h1>Random Image</h1>
+    <button class="btn_style">New Dog Image</button>
+    <br>
+    <img> -->

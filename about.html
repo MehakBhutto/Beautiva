@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Beautiva</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="nav-box">
+            <button class="fa-solid fa-bars navbar-toggler"></button>
+            
+            <h3 class="border">Beautiva</h3>
+            <a href="about.html" class="border">About us</a>
+            <a href="contact.html" class="border">Contact us</a>
+            <i class="fa-solid fa-magnifying-glass search border"></i>
+            <i id="cart-btn" class="fa-solid fa-bag-shopping border"></i>
+        </nav>
+        <div id="search-area">
+            <div>
+                <input type="text" placeholder="Search">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div id="cart-area" >
+            <i id="close-btn" class="fa-solid fa-xmark "></i>
+            <div id="area-1">
+                <h2>Cart</h2>
+                <p id="cart_empty">Your Cart is empty</p>
+            </div>
+            <div id="cashier">
+                <div>
+                    <span id="subtotal">Subtotal:</span>
+                    <span id="subtotal_price"></span>
+                </div>
+                <button id="checkout_btn">CHECKOUT</button>
+            </div>
+        </div>
+    </header>
+
+  <section id="about-header">
+    <h1>About Beautiva</h1>
+    <p>Your Beauty, Our Passion</p>
+  </section>
+
+  <section id="about-content">
+    <div id="about-text">
+      <h2>Who We Are</h2>
+      <p>Beautiva is a premium beauty brand dedicated to providing high-quality cosmetics that enhance your natural beauty. Our mission is to make you feel confident and beautiful every day.</p>
+      <p>We believe in innovation, quality, and customer satisfaction. Every product is crafted with care to ensure the best experience for you.</p>
+    </div>
+    <div id="about-image">
+      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Assorted cosmetics flatlay">
+    </div>
+  </section>
+
+  <section id="why-choose-us">
+    <h2>Why Choose Beautiva?</h2>
+    <div id="features">
+      <div class="feature">
+        <i class="fas fa-leaf"></i>
+        <h3>Natural Ingredients</h3>
+        <p>We use safe and skin-friendly ingredients in all our products.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-star"></i>
+        <h3>Premium Quality</h3>
+        <p>Our products are tested and trusted by thousands of customers.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>Get your favorite beauty products delivered to your doorstep quickly.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="cta">
+    <a href="home.html" id="shop-btn">Shop Now</a>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

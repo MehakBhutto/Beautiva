@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiva - Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #nav-box{
+            margin: 0px;
+        }
+        *{
+            text-align: left;
+        }
+        button, input[type="submit"]{
+            text-align: center;
+        }
+        a , .a{
+            display: none;
+        }
+        .navbar-toggler{
+            color:white;
+            border-color: white
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="nav-box">
+            <h3 class="border">Beautiva</h3>
+            <button class="fa-solid fa-bars navbar-toggler"></button>
+            <a href="about.html" class="border">About us</a>
+            <a href="contact.html" class="border">Contact us</a>
+            <i class="fa-solid fa-magnifying-glass search border a"></i>
+            <i id="cart-btn" class="fa-solid fa-bag-shopping border"></i>
+        </nav>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div id="search-area">
+            <div>
+                <input type="text" placeholder="Search">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div id="cart-area" >
+            <i id="close-btn" class="fa-solid fa-xmark "></i>
+            <div id="area-1">
+                <h2>Cart</h2>
+                <p id="cart_empty">Your Cart is empty</p>
+            </div>
+            <div id="cashier">
+                <div>
+                    <span id="subtotal">Subtotal:</span>
+                    <span id="subtotal_price"></span>
+                </div>
+                <button id="checkout_btn">CHECKOUT</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="checkpage-area">
+            <section id="checkout-details">
+                <details value="Summary" open>
+                <summary>Summary</summary>
+                <div id="chkout-products">
+                    <!-- <div class="chkout-product">
+                        <img src="" alt="">
+                        <p></p>
+                        <span></span>
+                    </div> -->
+                </div>
+                <div id="input-field">
+                    <input type="number" class="input" placeholder="Discount code">
+                    <button id="discount-btn" >Apply</button>
+                </div>
+                <div id="price-box">
+                    <span>Subtotal . </span>
+                    <span id="price-total"></span>
+                </div>
+                <div id="price-box">
+                    <span>Shipping</span>
+                    <span>Rs 150.00</span>
+                </div>
+                <br>
+                <div id="price-box">
+                    <h2>Total</h2>
+                    <p>PKR</p>
+                </div>
+                </details>
+            </section>
+            <section id="form">
+                <form id="orderForm">
+                    <h2>Contact</h2> <br>
+                    <input type="email" class="input email-one" placeholder="Email">
+                    <label for="email" >
+                        <input type="checkbox" style="margin-right: 8px;" id="email">
+                            Email me with news and offers
+                        </label>
+                    <br><br><br>
+                    <h2>Delivery</h2>
+                    <br>
+                    <select name="" class="input email-one" required>
+                        <option value readonly> Select city from dropdown</option>
+                        <option value="sukkur">SUKKUR</option>
+                        <option value="karachi">KARACHI</option>
+                        <option value="islamabad">ISLAMABAD</option>
+                        <option value="hyderabad">HYDERABAD</option>
+                    </select>
+                    <div id="name-field">
+                        <input type="text" class="input name" placeholder="First name" required>
+                        <input type="text" class="input name" placeholder="Last name" required>
+                    </div>
+                    <input type="text" class="input email-one" placeholder="Address" required>
+                    <input type="text" class="input email-one" placeholder="Apartment, Suite, etc. (Optional)">
+                    <input type="tel" class="input email-one" placeholder="Phone" pattern="[0-9]{4}[0-9]{7}"required>
+                    <br><br>
+                    <h3>Shipping methods</h3>
+                    <br>
+                    <div class="input email-one ship-price">
+                        <span id="span1">Standard</span>
+                        <span id="span2"><b>Rs 150.00</b></span>
+                    </div>
+                    <br>
+                    <h3 style="margin-bottom: 10px">Payment</h3> 
+                    <p style="color: #707070">All transactions are secure and encrypted.</p> <br>
+                    <div class="input email-one payment">
+                        <label for="cash-way1" id="cash" class="input email-one ">
+                            <input type="radio" name="cash-way" value="debit" id="cash-way1" required>
+                            Debit - Credit Card</label>
+                            <br>
+                        <label for="cash-way2" id="cash" class="input email-one" style="border-color: transparent;">
+                            <input type="radio" name="cash-way" value="cod" id="cash-way2" required>
+                            Cash on Delivery (COD)</label>
+                    </div>
+                    <p  class="input email-one para">Note: Please do not close the Debit/Credit card payment window until you are redirected to the Thank You page and have received your order confirmation email.</p>
+                    <br>
+                    <div class="input email-one para" >
+                        Note: You may receive multiple packages for one order (local orders only)
+                        <ul>
+                            <li>For Nationwide order delivery will take 2-5 working days</li>
+                            <li>For any inquiries, please feel free to reach out to us at Email id beautiva@.com or call us at +92 00 000 000 000</li>
+                        </ul>
+                    </div>
+                    <input type="submit" class="input email-one order-complete" value="Complete Order"
+                     style="
+                        cursor: pointer;
+                        background-color: blue;
+                        color: white;
+                        font-weight: 700;
+                    ">
+                </form>
+            </section>
+            
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

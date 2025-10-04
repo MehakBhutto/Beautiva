@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Beautiva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-box">
+            <button class="fa-solid fa-bars navbar-toggler"></button>
+            <h3 class="border">Beautiva</h3>
+            
+            <a href="about.html" class="border">About us</a>
+            <a href="contact.html" class="border">Contact us</a>
+            <i class="fa-solid fa-magnifying-glass search border"></i>
+            <i id="cart-btn" class="fa-solid fa-bag-shopping border"></i>
+        </nav>
+        <div id="search-area">
+            <div>
+                <input type="text" placeholder="Search">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div id="cart-area" >
+            <i id="close-btn" class="fa-solid fa-xmark "></i>
+            <div id="area-1">
+                <h2>Cart</h2>
+                <p id="cart_empty">Your Cart is empty</p>
+            </div>
+            <div id="cashier">
+                <div>
+                    <span id="subtotal">Subtotal:</span>
+                    <span id="subtotal_price"></span>
+                </div>
+                <button id="checkout_btn">CHECKOUT</button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="contact-hero">
+        <h1>Beautiva</h1>
+        <p>Get in Touch with Us</p>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section id="contact-container">
+        <!-- Contact Info -->
+        <div id="contact-info">
+            <h2>Contact Information</h2>
+            <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+            <p><i class="fa-solid fa-envelope"></i> beautiva@gmail.com</p>
+            <p><i class="fa-solid fa-map-marker-alt"></i> Karachi, Pakistan</p>
+
+            <div id="social-icons" >
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
